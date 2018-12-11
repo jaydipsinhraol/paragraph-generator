@@ -122,7 +122,7 @@ var AppComponent = /** @class */ (function () {
             this.formatedContent.length = i;
             if (this.startPosition === 0 && this.splitedContent.length > this.wordLimit) {
                 this.formatedContent.length = 0;
-                this.endPosition = this.wordLimit;
+                this.endPosition = this.wordLimit - 1;
             }
             else if (this.splitedContent.length > (this.wordLimit * i)) {
                 this.endPosition = this.wordLimit * i - 1;
